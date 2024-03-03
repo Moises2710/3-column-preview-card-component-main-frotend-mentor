@@ -1,0 +1,141 @@
+/* Variables */
+:root {
+    /*Primary*/
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Body */
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    min-height: 100vh;
+    padding: 0px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box */
+ .box {
+    height: 380px;
+    padding: 30px;
+    color: #fff;
+}
+
+/* h3 and p */
+h3 {
+    padding: 10px 0px;
+    margin: 0;
+    font-size: 38px;
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lexend Deca';
+    font-size: 15px;
+    margin: 20px 0px 80px 0px;
+    font-weight: 300;
+    color: var(--Transparent-white);
+    line-height: 25px;
+}
+
+/* Button */
+.button {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-family: 'Lexend Deca';
+}
+
+.button:hover {
+    border: 2px solid var(--Very-light-gray);
+    background-color: transparent;
+    color: var(--Very-light-gray);
+    /* border-radius: 20px; */
+}
+
+/*  orange */
+.orange {
+    background-color: var(--Bright-orange);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.orange a {
+    color: var(--Bright-orange);
+}
+
+/*  cyan */
+.cyan {
+    background-color: var(--Dark-cyan);
+}
+
+.cyan a {
+    color: var(--Dark-cyan);
+}
+
+/*  dark cyan */
+.dark_cyan {
+    background-color: var(--Very-dark-cyan);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.dark_cyan a {
+    color: var(--Very-dark-cyan);
+}
+
+
+/* Media queries */
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 30px 0px;
+        padding: 0px 20px;
+        display: grid;
+        min-height: 100%;
+    }
+    img {
+        width: 40px;
+    }
+    h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 28px;
+    }
+    p {
+        margin: 10px 0px 40px 0px;
+        line-height: 20px;
+        font-size: 12px;
+    }
+    .box {
+        height: 200px;
+        margin: 0;
+        padding: 40px;
+    }
+    .button {
+        padding: 7px 15px;
+        margin: 0;
+        font-size: 12px;
+    }
+    .orange {
+        border-radius: 0px;
+    }
+    .dark_cyan {
+        border-radius: 0px;
+    }
+}
